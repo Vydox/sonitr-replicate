@@ -4,7 +4,7 @@ import shutil
 import zipfile
 import urllib.request
 from argparse import Namespace
-from app_rvc import (set_logging_level,
+from sonitr_replicate import (set_logging_level,
                      UVR_MODELS,
                      download_manager,
                      MDX_DOWNLOAD_LINK,
@@ -29,7 +29,7 @@ class Predictor(BasePredictor):
         link_media: str = Input(
             description="Input link",
             default=None),
-        SOURCE_LANGUAGE=Input(
+        SOURCE_LANGUAGE: str =Input(
             description="Original language",
             default="Automatic detection"),
         TRANSLATE_AUDIO_TO: str = Input(
