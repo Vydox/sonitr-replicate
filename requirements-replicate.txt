@@ -1,14 +1,9 @@
 --extra-index-url https://download.pytorch.org/whl/cu118
-torch>=2.1.0+cu118
-torchvision>=0.16.0+cu118
-torchaudio>=2.1.0+cu118
 yt-dlp
 gradio==4.19.2
 pydub==0.25.1
 edge_tts==6.1.7
 deep_translator==1.11.4
-git+https://github.com/R3gm/pyannote-audio.git@3.1.1
-git+https://github.com/R3gm/whisperX.git@cuda_11_8
 nest_asyncio
 gTTS
 gradio_client==0.10.1
@@ -26,7 +21,6 @@ accelerate
 optimum
 sentencepiece
 srt
-git+https://github.com/R3gm/openvoice_package.git@lite
 # Documents
 PyPDF2
 python-docx
@@ -35,7 +29,6 @@ numpy==1.23.5
 cython>=0.29.30
 scipy>=1.11.2
 torch
-torchaudio
 soundfile
 librosa
 scikit-learn

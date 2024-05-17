@@ -13,7 +13,10 @@ build:
     #- bash Anaconda3-2024.02-1-Linux-x86_64.sh
     #- conda create -n sonitr python=3.10 -y
     #- conda activate sonitr
-    - pip install pytorch torchvision torchaudio pytorch-cuda=11.8
+    - pip install pytorch torchvision torchaudio pytorch-cuda=11.8 --extra-index-url https://download.pytorch.org/whl/cu118
+    - pip install git+https://github.com/R3gm/pyannote-audio.git@3.1.1
+    - pip install git+https://github.com/R3gm/whisperX.git@cuda_11_8
+    - pip install git+https://github.com/R3gm/openvoice_package.git@lite
     - pip install onnxruntime-gpu
     - pip install -q TTS==0.21.1  --no-deps
     - export YOUR_HF_TOKEN="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"
